@@ -20,15 +20,10 @@
 	margin-bottom: 15px;
 }
 
-.book-details {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
 .book-details h3 {
-	font-size: 22px;
+	font-size: 20px;
 	color: #008080;
+	margin-bottom: 10px;
 }
 
 .book-details p {
