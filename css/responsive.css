@@ -1,0 +1,16 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+	header {
+		flex-direction: column;
+	}
+
+	#search {
+		flex-direction: column;
+	}
+
+	#search input,
+	#search select {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+}
