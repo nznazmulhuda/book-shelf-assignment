@@ -1,0 +1,65 @@
+.book-item {
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	transition: transform 0.3s ease;
+	position: relative;
+}
+
+.book-item:hover {
+	transform: translateY(-10px);
+}
+
+.book-cover {
+	width: 100%;
+	height: 300px;
+	border-radius: 8px;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 15px;
+}
+
+.book-details {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.book-details h3 {
+	font-size: 22px;
+	color: #008080;
+}
+
+.book-details p {
+	font-size: 16px;
+	color: #6c757d;
+}
+
+/* Wishlist Button */
+.wishlist-btn {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	background-color: #008080;
+	border: none;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	font-size: 24px;
+	color: #ffffff;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wishlist-btn.active {
+	background-color: #ff6f00;
+	transform: scale(1.1);
+}
+
+.wishlist-btn:hover {
+	background-color: #008080d4;
+}
