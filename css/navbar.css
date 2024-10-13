@@ -1,0 +1,45 @@
+/* Header */
+header {
+	background-color: #008080; /* Teal Blue */
+	padding: 15px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+	font-size: 28px;
+	font-weight: bold;
+	color: #ffffff;
+	margin-left: 30px;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	margin-right: 30px;
+}
+
+nav ul li {
+	margin-left: 20px;
+}
+
+nav ul li a {
+	font-size: 18px;
+	color: #ffffff;
+	padding: 5px 10px;
+	border-radius: 4px;
+	transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
