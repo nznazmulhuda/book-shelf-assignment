@@ -32,13 +32,96 @@
 
 		<main>
 			<!-- search and filter section -->
-			<section id="search"></section>
+			<section id="search">
+				<!-- search bar -->
+				<input type="search" id="searchInput" placeholder="Search by title" />
+
+				<!-- filter -->
+				<select id="genreFilter">
+					<option value="all">All Genres</option>
+					<option value="fiction">fiction</option>
+					<option value="non-fiction">Non-Fiction</option>
+					<option value="classics">Classics</option>
+				</select>
+			</section>
 
 			<!-- booklist and book card section -->
-			<section id="bookList"></section>
+			<section id="bookList">
+				<!-- TODO: single card which is dynamic -->
+				<div class="book-item">
+					<!-- cover image -->
+					<div class="book-cover"></div>
+
+					<!-- wishlist button -->
+					<button class="wishlist-btn">&#10084;</button>
+
+					<!-- book details -->
+					<div class="book-details">
+						<div>
+							<h3>Book Title 1</h3>
+							<p>Author Name 1</p>
+						</div>
+						<p>Genre</p>
+					</div>
+				</div>
+
+				<div class="book-item">
+					<!-- cover image -->
+					<div class="book-cover"></div>
+
+					<!-- wishlist button -->
+					<button class="wishlist-btn">&#10084;</button>
+
+					<!-- book details -->
+					<div class="book-details">
+						<div>
+							<h3>Book Title 1</h3>
+							<p>Author Name 1</p>
+						</div>
+						<p>Genre</p>
+					</div>
+				</div>
+
+				<div class="book-item">
+					<!-- cover image -->
+					<div class="book-cover"></div>
+
+					<!-- wishlist button -->
+					<button class="wishlist-btn">&#10084;</button>
+
+					<!-- book details -->
+					<div class="book-details">
+						<div>
+							<h3>Book Title 1</h3>
+							<p>Author Name 1</p>
+						</div>
+						<p>Genre</p>
+					</div>
+				</div>
+
+				<div class="book-item">
+					<!-- cover image -->
+					<div class="book-cover"></div>
+
+					<!-- wishlist button -->
+					<button class="wishlist-btn">&#10084;</button>
+
+					<!-- book details -->
+					<div class="book-details">
+						<div>
+							<h3>Book Title 1</h3>
+							<p>Author Name 1</p>
+						</div>
+						<p>Genre</p>
+					</div>
+				</div>
+			</section>
 
 			<!-- pagination -->
-			<section id="pagination"></section>
+			<section id="pagination">
+				<button id="prevPage">Previous</button>
+				<button id="nextPage">Next</button>
+			</section>
 		</main>
 
 		<!-- all javascript files are here -->
