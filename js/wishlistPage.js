@@ -1,25 +1,28 @@
 import { getWishlist, removeFromWishlist } from "./storage.js";
-import { fetchBooks } from "./api.js";
+
+let wishlist = getWishlist();
 
 document.addEventListener("DOMContentLoaded", () => {
 	loadWishlist();
 });
 
 async function loadWishlist() {
-	const wishlist = getWishlist();
 	const bookList = document.getElementById("wishlistItems");
+	if (!wishlist.length) {
+		bookList.innerHTML = "<p>No books in wishlist.</p>";
+		console.log(wishlist.length);
+		return;
+	}
+
 	bookList.innerHTML = ""; // Clear the list
 
 	for (let bookId of wishlist) {
 		const book = await fetchBooksById(bookId);
 		const bookItem = document.createElement("div");
 
-		const wishlist = getWishlist();
 		let isWishlist = false;
 
-		if (wishlist.length) {
-			isWishlist = wishlist.includes(book.id.toString());
-		}
+		isWishlist = wishlist.includes(book.id.toString());
 
 		bookItem.classList.add("book");
 		bookItem.innerHTML = `
@@ -49,7 +52,7 @@ async function loadWishlist() {
 
 // Add listeners to remove buttons
 function addRemoveListeners() {
-	const buttons = document.querySelectorAll(".remove-btn");
+	const buttons = document.querySelectorAll(".wishlist-btn");
 	buttons.forEach((button) => {
 		button.addEventListener("click", () => {
 			const bookId = button.getAttribute("data-id");
