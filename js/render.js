@@ -26,7 +26,11 @@ export function renderBooks(books) {
 		}</button>
 
         <div class="book-details">
-          <h3>${book.title}</h3>
+          <h3>${
+						book.title.length > 30
+							? book.title.slice(0, 30) + "..."
+							: book.title
+					}</h3>
           <p>Author: ${
 						book.authors.length ? book.authors[0].name : "Unknown"
 					}</p>
