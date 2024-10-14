@@ -14,7 +14,12 @@ async function loadWishlist() {
 		const book = await fetchBooksById(bookId);
 		const bookItem = document.createElement("div");
 
-		
+		const wishlist = getWishlist();
+		let isWishlist = false;
+
+		if (wishlist.length) {
+			isWishlist = wishlist.includes(book.id.toString());
+		}
 
 		bookItem.classList.add("book");
 		bookItem.innerHTML = `

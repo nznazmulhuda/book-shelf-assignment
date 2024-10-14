@@ -13,8 +13,6 @@ export function renderBooks(books) {
 
 		if (wishlist.length) {
 			isWishlist = wishlist.includes(book.id.toString());
-			console.log(wishlist);
-			console.log(isWishlist);
 		}
 
 		bookItem.innerHTML = `
