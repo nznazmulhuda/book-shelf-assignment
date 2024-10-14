@@ -1,12 +1,14 @@
 import { getWishlist, removeFromWishlist } from "./storage.js";
 
-let wishlist = getWishlist();
+let wishlist;
 
 document.addEventListener("DOMContentLoaded", () => {
+	wishlist = getWishlist();
 	loadWishlist();
 });
 
 async function loadWishlist() {
+	wishlist = getWishlist();
 	const bookList = document.getElementById("wishlistItems");
 	if (!wishlist.length) {
 		bookList.innerHTML = "<p>No books in wishlist.</p>";
