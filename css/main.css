@@ -55,25 +55,27 @@ main {
 }
 
 /* Pagination */
-#pagination {
-	display: flex;
-	justify-content: center;
-	margin-top: 30px;
+.pagination-controls {
+	text-align: center;
+	margin: 20px 0;
 }
 
-#pagination button {
-	background-color: #008080; /* Teal Blue */
+.pagination-btn {
+	background-color: #3498db;
 	color: white;
-	border: none;
 	padding: 10px 20px;
-	margin: 0 5px;
-	border-radius: 5px;
+	border: none;
 	cursor: pointer;
-	transition: background-color 0.3s ease;
+	margin: 5px;
 }
 
-#pagination button:hover {
-	background-color: #006666;
+.pagination-btn:hover {
+	background-color: #2980b9;
+}
+
+.pagination-btn:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
 }
 
 /* Wishlist Page */

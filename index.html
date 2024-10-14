@@ -38,7 +38,7 @@
 
 				<!-- filter -->
 				<select id="genreFilter">
-					<option value="all">All Genres</option>
+					<option value="">All Genres</option>
 					<option value="fiction">fiction</option>
 					<option value="non-fiction">Non-Fiction</option>
 					<option value="classics">Classics</option>
@@ -47,6 +47,16 @@
 
 			<!-- booklist and book card section -->
 			<section id="bookList">
+				<h1
+					style="
+						font-size: 20px;
+						text-align: center;
+						margin-top: 10px;
+						margin-bottom: 10px;
+					"
+				>
+					Loading...
+				</h1>
 				<!-- TODO: single card which is dynamic -->
 				<!-- <div class="book-item">
 					<div class="book-cover"></div>
@@ -62,12 +72,13 @@
 			</section>
 
 			<!-- pagination -->
-			<section id="pagination"></section>
+			<div class="pagination-controls">
+				<button id="prevBtn" class="pagination-btn">Previous</button>
+				<button id="nextBtn" class="pagination-btn">Next</button>
+			</div>
 		</main>
 
 		<!-- all javascript files are here -->
-		<script type="module" src="js/books.js"></script>
-		<script type="module" src="js/search.js"></script>
-		<script type="module" src="js/wishlist.js"></script>
+		<script type="module" src="/js/main.js"></script>
 	</body>
 </html>
